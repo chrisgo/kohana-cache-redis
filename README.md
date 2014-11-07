@@ -85,12 +85,10 @@ it can't connect to Redis
 
 ```
 // For Testing
-Cache::instance('redis')->set('foo', 'bar');
-
-echo Debug::vars(Cache::instance('redis')->get('foo', 'not'));
+echo Debug::vars(Cache::instance('redis')->get('somekey', 'not'));
 ```
 
-If your system outputs NULL, your Redis configuration is wrong.  
+If your system outputs `NULL`, your Redis configuration is wrong.  
 
 If your system outputs `not`, then the Redis cache engine is working
 
