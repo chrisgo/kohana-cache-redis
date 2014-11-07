@@ -20,7 +20,7 @@ Requirements
 Install
 ----
 
-* Copy into this project into `MODPATH/kohana-redis-cache`
+* Copy into this project into `MODPATH/kohana-cache-redis`
 
 Configuration
 ----
@@ -42,7 +42,7 @@ $modules = array(
     ...
     'cache' => 'cache',                       // enable kohana cache engine 
     ...
-    'redis-cache' => 'kohana-redis-cache',    // enable redis as a cache engine
+    'cache-redis' => 'kohana-cache-redis',    // enable redis as a cache engine
     ...
 );
 ```
