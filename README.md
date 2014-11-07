@@ -84,7 +84,7 @@ with a default value that is a string.  The cache engine will return `NULL` if
 it can't connect to Redis
 
 ```
-// For Testing
+// For Testing, get() a key that does not exist
 echo Debug::vars(Cache::instance('redis')->get('somekey', 'not'));
 ```
 
